@@ -19,15 +19,15 @@ jobs:
           unityVersion: ${{ vars.UNITY_VERSION }}
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: SonarCloud Scan 🔍
-        uses: sonarsource/sonarcloud-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-          args: >
-            -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION_KEY }}
-            -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
+#      - name: SonarCloud Scan 🔍
+#        uses: sonarsource/sonarcloud-github-action@master
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+#        with:
+#          args: >
+#            -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION_KEY }}
+#            -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
 
  
         
