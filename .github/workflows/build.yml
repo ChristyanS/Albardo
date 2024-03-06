@@ -25,7 +25,7 @@ jobs:
           key: Library
           
       - name: Unity - Builder 🔨
-        uses: game-ci/unity-builder@v4.2.1
+        uses: game-ci/unity-builder@v3
         with:
           unityVersion: ${{ vars.UNITY_VERSION }}
           targetPlatform: StandaloneWindows64
