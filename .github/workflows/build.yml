@@ -29,6 +29,7 @@ jobs:
         with:
           unityVersion: ${{ vars.UNITY_VERSION }}
           targetPlatform: StandaloneWindows64
+          kubeVolumeSize: 15Gi
           
       - name: Upload Build ⬆️
         uses: actions/upload-artifact@v1
