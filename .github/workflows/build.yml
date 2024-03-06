@@ -19,7 +19,7 @@ jobs:
           lfs: true
           
       - name: Active Cache 📁
-        uses: actions/cache@v1.1.0
+        uses: actions/cache@v3
         with:
           path: Library
           key: Library
@@ -29,7 +29,6 @@ jobs:
         with:
           unityVersion: ${{ vars.UNITY_VERSION }}
           targetPlatform: StandaloneWindows64
-          kubeVolumeSize: 8Gi
           
       - name: Upload Build ⬆️
         uses: actions/upload-artifact@v1
